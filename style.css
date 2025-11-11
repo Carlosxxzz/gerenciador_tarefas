@@ -27,7 +27,7 @@ li {
     border-left: 5px solid #4caf50;
     display: flex;
     justify-content: space-between;
-    align_items: center;
+    align-items: center;
 }
 
 .completed {
