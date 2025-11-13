@@ -70,7 +70,20 @@ async function toggleCompleted(id, completed){
     } catch (erro){
       alert("Erro ao atualizar tarefa: " + error.message);
     }
+}
+
+async function deleteTask(id) {
+    try {
+        await fetch(`${apiUrl}/${id}`, {
+            method: 'DELETE'
+        })
+        loadTasks();
+    } catch (erro) {
+      alert("Erro ao excluir tarefa: " + error.message);
     }
+}
+
+loadTasks();
  
 
 
